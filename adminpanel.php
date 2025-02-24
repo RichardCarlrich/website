@@ -7,152 +7,140 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-          
-    
-        
-       
-        
-    
-}
-    .adpg
-    {
-        background: url('back1.jpg') no-repeat;
-        width:100%;
-        height: 100%;
-    }
-    .mouse
-    {
-        transform: rotate(90deg);
-        background-color: black;
-    }
-    .price-table:hover
-    {
-       box-shadow: 5px 5px 5px lightgrey, -5px 0px 5px lightgrey;
-    }
-    .dashboard
-    {
-        background-color:#333399;
-        color:white;
-        width:25%;
-        font-family: serif;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px black, -5px 0px 5px black;
-        
-    }
-     .dashboard:hover
-    {
-     transform: translateY(5px);
-        
-    }
-    .adminimage
-    {
-        border-radius: 50%;
-        
-        
-    }
-    .adminhead
-    {
-        text-align: center;
-        color: white;
-        background-color: #000066;
-        width:100%;
-        height:40px;
-        font-weight: bolder;
-        font-size: 25px;
-        
-    }
-   .modal-header
-    {
-        background-color:#5FCF80;
-        
-    }
- 
-    .links
-    {
-        background: #000066;
-        color:white;
-         border:2px solid #333399;
-        height:50px;
-        width:100%;
-        border-radius: 10px; 
-    }
-    .links:hover
-    {
-        background: #333399;
-       font-size: 15px;
-        border: 2px solid #000066; 
-    }
-        .links1
-    {
-        background: #000066;
-        color:white;
-         border:2px solid #333399;
-        height:50px;
-        width:100%;
-        border-radius: 5%; 
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-    .links1:hover
-    {
-        background: #333399;
-       
-        border: 2px solid #000066; 
-    }
-    .dash1
-    {
-        float: left;
-    }
-     .dash2
-    {
-        float: right;
-        position: absolute;
-        top:75px;
-        right: 90px;
-    }
-  
-    
-    .mybutton {
-  border-radius: 0px 40px 40px 0px;
-  background-color: #5FCF80;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-.mybutton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+  .adpg {
+    background: url('back1.jpg') no-repeat;
+    width: 100%;
+    height: 100%;
+  }
 
-.mybutton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+  .mouse {
+    transform: rotate(90deg);
+    background-color: black;
+  }
 
-.mybutton:hover span {
-  padding-right: 25px;
-}
+  .price-table:hover {
+    box-shadow: 5px 5px 5px lightgrey, -5px 0px 5px lightgrey;
+  }
 
-.mybutton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+  .dashboard {
+    background-color: #333399;
+    color: white;
+    width: 25%;
+    font-family: serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black, -5px 0px 5px black;
+
+  }
+
+  .dashboard:hover {
+    transform: translateY(5px);
+  }
+
+  .adminimage {
+    border-radius: 50%;
+  }
+
+  .adminhead {
+    text-align: center;
+    color: white;
+    background-color: #000066;
+    width: 100%;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .modal-header {
+    background-color: #5FCF80;
+  }
+
+  .links {
+    background: #000066;
+    color: white;
+    border: 2px solid #333399;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .links:hover {
+    background: #333399;
+    font-size: 15px;
+    border: 2px solid #000066;
+  }
+
+  .links1 {
+    background: #000066;
+    color: white;
+    border: 2px solid #333399;
+    height: 50px;
+    width: 100%;
+    border-radius: 5%;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .links1:hover {
+    background: #333399;
+
+    border: 2px solid #000066;
+  }
+
+  .dash1 {
+    float: left;
+  }
+
+  .dash2 {
+    float: right;
+    position: absolute;
+    top: 75px;
+    right: 90px;
+  }
+
+
+  .mybutton {
+    border-radius: 0px 40px 40px 0px;
+    background-color: #5FCF80;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .mybutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .mybutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .mybutton:hover span {
+    padding-right: 25px;
+  }
+
+  .mybutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 </style>
 <html lang="en">
 
@@ -201,77 +189,68 @@
     </div>
   </nav>
   <!--/ Navigation bar--><br><br>
-<div class="adpg">
+  <div class="adpg">
     <br><br>
-<div class="dash1">
-  <form action="adsuggestion.php" method="get">
-    <input type="submit" value="Suggestions from authenticated users" class="links1">
-</form>
-<br>
-<form action="admessage.php" method="get">
-    <input type="submit" value="Messages from non-authenticated users" class="links1">
-</form>
-<br>
-<form action="adpayment.php" method="get">
-    <input type="submit" value="Course payment detials" class="links1">
-</form>
-<form action="adpayment.php" method="get">
-    <input type="submit" value="Course payment detials" class="links1">
-</form>
+    <div class="dash1">
+      <form action="adsuggestion.php" method="get">
+        <input type="submit" value="Suggestions from authenticated users" class="links1">
+      </form>
+      <br>
+      <form action="admessage.php" method="get">
+        <input type="submit" value="Messages from non-authenticated users" class="links1">
+      </form>
+      <br>
+      <form action="adpayment.php" method="get">
+        <input type="submit" value="Course payment detials" class="links1">
+      </form>
+      <form action="adpayment.php" method="get">
+        <input type="submit" value="Course payment detials" class="links1">
+      </form>
     </div>
-<center>
-   
-    
-    
-    
-    
-    
-<div class="dashboard">
-
-    <div class="adminhead">ADMIN-PANEL</div><br>
     <center>
-        <img src="amol.jpg" class="adminimage img-responsive"></center>
-<hr>
-<div style="line-height:0px;">
-<form action="adsuggestion.php" method="get">
-    <input type="submit" value="Suggestions from authenticated users" class="links">
-</form>
-<br>
-<form action="admessage.php" method="get">
-    <input type="submit" value="Messages from non-authenticated users" class="links">
-</form>
-<br>
-<form action="adpayment.php" method="get">
-    <input type="submit" value="Course payment detials" class="links"s>
-</form>
-    </div>
-    </div>
+      <div class="dashboard">
+
+        <div class="adminhead">ADMIN-PANEL</div><br>
+        <center>
+          <img src="amol.jpg" class="adminimage img-responsive">
+        </center>
+        <hr>
+        <div style="line-height:0px;">
+          <form action="adsuggestion.php" method="get">
+            <input type="submit" value="Suggestions from authenticated users" class="links">
+          </form>
+          <br>
+          <form action="admessage.php" method="get">
+            <input type="submit" value="Messages from non-authenticated users" class="links">
+          </form>
+          <br>
+          <form action="adpayment.php" method="get">
+            <input type="submit" value="Course payment detials" class="links" s>
+          </form>
+        </div>
+      </div>
     </center>
-    
-    
-    
-    
-    
+
     <div class="dash2">
-  <form action="adsuggestion.php" method="get">
-    <input type="submit" value="Suggestions from authenticated users" class="links1">
-</form>
-<br>
-<form action="admessage.php" method="get">
-    <input type="submit" value="Messages from non-authenticated users" class="links1">
-</form>
-<br>
-<form action="adpayment.php" method="get">
-    <input type="submit" value="Course payment detials" class="links1">
-</form>
-        <form action="adpayment.php" method="get">
-    <input type="submit" value="Course payment detials" class="links1">
-</form>
+      <form action="adsuggestion.php" method="get">
+        <input type="submit" value="Suggestions from authenticated users" class="links1">
+      </form>
+      <br>
+      <form action="admessage.php" method="get">
+        <input type="submit" value="Messages from non-authenticated users" class="links1">
+      </form>
+      <br>
+      <form action="adpayment.php" method="get">
+        <input type="submit" value="Course payment detials" class="links1">
+      </form>
+      <form action="adpayment.php" method="get">
+        <input type="submit" value="Course payment detials" class="links1">
+      </form>
     </div>
-    
+
     <br><br><br><br>
-    </div>
-    <!--Footer-->
+  </div>
+  <!--Footer-->
   <footer id="footer" class="footer">
     <div class="container text-center">
 
@@ -293,7 +272,7 @@
         <div class="col-md-2 col-sm-4">
           <p>
             <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Suggest this! <i class="fa fa-arrow-right"></i></button>
+              Suggest this! <i class="fa fa-arrow-right"></i></button>
           </p>
         </div>
       </form>
@@ -305,7 +284,7 @@
         <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
       </ul>
-      ©2016 Learn To Code  All rights reserved
+      ©2016 Learn To Code All rights reserved
       <div class="credits">
         <!--
           All the links in the footer should remain intact.
@@ -318,5 +297,3 @@
     </div>
   </footer>
 </body>
-
-

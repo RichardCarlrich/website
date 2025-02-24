@@ -9,58 +9,58 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
-    .mouse
-    {
-        transform: rotate(90deg);
-        background-color: black;
-    }
-    .price-table:hover
-    {
-       box-shadow: 5px 5px 5px lightgrey, -5px 0px 5px lightgrey;
-    }
-   .modal-header
-    {
-        background-color:#5FCF80;
-        
-    }
-    .mybutton {
-  border-radius: 0px 40px 40px 0px;
-  background-color: #5FCF80;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
+  .mouse {
+    transform: rotate(90deg);
+    background-color: black;
+  }
 
-.mybutton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+  .price-table:hover {
+    box-shadow: 5px 5px 5px lightgrey, -5px 0px 5px lightgrey;
+  }
 
-.mybutton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
+  .modal-header {
+    background-color: #5FCF80;
 
-.mybutton:hover span {
-  padding-right: 25px;
-}
+  }
 
-.mybutton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+  .mybutton {
+    border-radius: 0px 40px 40px 0px;
+    background-color: #5FCF80;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .mybutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .mybutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .mybutton:hover span {
+    padding-right: 25px;
+  }
+
+  .mybutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 </style>
 <html lang="en">
 
@@ -98,12 +98,12 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contactus">Contact Us</a></li>
-            <li><a href="#courses">Courses</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+          <li><a href="#courses">Courses</a></li>
           <li><a href="#feature">Features</a></li>
           <li><a href="aboutus.php">About us</a></li>
-          
-          
+
+
           <li><a href="#" data-target="#login" data-toggle="modal">Log in</a></li>
           <li class="btn-trial"><a href="#" data-target="#signin" data-toggle="modal">Sign in</a></li>
         </ul>
@@ -126,17 +126,17 @@
           <div class="login-box-body">
             <p class="login-box-msg">Log in to start your session</p>
             <div class="form-group">
-              <form  id="loginForm" action="loginltc.php" method="get" >
+              <form id="loginForm" action="loginltc.php" method="get">
                 <div class="form-group has-feedback">
                   <!----- username -------------->
-                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" name="fname"/>
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" name="fname" />
                   <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
                   <!---Alredy exists  ! -->
                   <span class="glyphicon glyphicon-user form-control-feedback" style="background-color: rgb(230,230,230);"></span>
                 </div>
                 <div class="form-group has-feedback">
                   <!----- password -------------->
-                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" name="pwd"/>
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" name="pwd" />
                   <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
                   <!---Alredy exists  ! -->
                   <span class="glyphicon glyphicon-lock form-control-feedback" style="background-color: rgb(230,230,230);"></span>
@@ -145,12 +145,12 @@
                   <div class="col-xs-12">
                     <div class="checkbox icheck">
                       <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
-                              </label>
+                        <input type="checkbox" id="loginrem"> Remember Me
+                      </label>
                     </div>
                   </div>
                   <div class="col-xs-12">
-                    <button type="submit" class="btn btn-green btn-block btn-flat"  >Log In</button>
+                    <button type="submit" class="btn btn-green btn-block btn-flat">Log In</button>
                   </div>
                 </div>
               </form>
@@ -163,14 +163,14 @@
   </div>
   <!--/ Modal box-->
   <!--Banner-->
-    
-<!--    signup form-->
-      <div class="modal fade" id="signin" role="dialog">
+
+  <!--    signup form-->
+  <div class="modal fade" id="signin" role="dialog">
     <div class="modal-dialog modal-sm">
 
       <!-- Modal content no 1-->
       <div class="modal-content">
-        <div class="modal-header" >
+        <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" style="color:white;">&times;</button>
           <h4 class="modal-title text-center form-title" style="color:white;">Create Account</h4>
         </div>
@@ -182,21 +182,21 @@
               <form name="" id="loginForm" method="post" action="signupltc.php">
                 <div class="form-group has-feedback">
                   <!----- username -------------->
-                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" name="fname"/>
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" name="fname" />
                   <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
                   <!---Alredy exists  ! -->
                   <span class=" form-control-feedback glyphicon glyphicon-user" style="background-color: rgb(230,230,230);"></span>
                 </div>
                 <div class="form-group has-feedback">
                   <!----- mail -------------->
-                  <input class="form-control" placeholder="E-mail"  type="text" autocomplete="off" name="email" />
+                  <input class="form-control" placeholder="E-mail" type="text" autocomplete="off" name="email" />
                   <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
                   <!---Alredy exists  ! -->
                   <span class="glyphicon glyphicon-envelope form-control-feedback" style="background-color: rgb(230,230,230);"></span>
                 </div>
                 <div class="form-group has-feedback">
                   <!----- password -------------->
-                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" name="pass"/>
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" name="pass" />
                   <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
                   <!---Alredy exists  ! -->
                   <span class="glyphicon glyphicon-lock form-control-feedback" style="background-color: rgb(230,230,230);"></span>
@@ -205,12 +205,12 @@
                   <div class="col-xs-12">
                     <div class="checkbox icheck">
                       <label>
-                                <input type="checkbox" id="loginrem" > Remember Me
-                              </label>
+                        <input type="checkbox" id="loginrem"> Remember Me
+                      </label>
                     </div>
                   </div>
                   <div class="col-xs-12">
-                    <button type="submit" class="btn btn-green btn-block btn-flat" >Sign In</button>
+                    <button type="submit" class="btn btn-green btn-block btn-flat">Sign In</button>
                   </div>
                 </div>
               </form>
@@ -221,51 +221,7 @@
 
     </div>
   </div>
-    
-    
-    
-    
-<!--    end of signup form-->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  <!--    end of signup form-->
   <div class="banner">
     <div class="bg-color">
       <div class="container">
@@ -371,8 +327,8 @@
             </hgroup>
             <p class="det-p">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
           </div>
-        </div> 
-          <button class="mybutton" style="float: right;"><span>More..</span></button>
+        </div>
+        <button class="mybutton" style="float: right;"><span>More..</span></button>
       </div>
     </div>
   </section>
@@ -433,9 +389,9 @@
               <h4 class="ser-text">Mentor Joomla Workshop</h4>
             </div>
           </div>
-            <br>
-<!--            <input class="cta-2-form-submit-btn" value="See more..." type="submit" style="float: right">-->
-            <button class="mybutton" style="float: right;"><span><a href="courses.php" style='text-decoration:none;color:white;'>More..</a></span></button>
+          <br>
+          <!--            <input class="cta-2-form-submit-btn" value="See more..." type="submit" style="float: right">-->
+          <button class="mybutton" style="float: right;"><span><a href="courses.php" style='text-decoration:none;color:white;'>More..</a></span></button>
         </div>
       </div>
     </div>
@@ -663,58 +619,40 @@
         <div class="header-section text-center">
           <h2>Contact Us</h2>
           <p>All the user visiting the website can contact us any any time by sending their message </p>
-               <p>We will do our best to solve your queries</p>
+          <p>We will do our best to solve your queries</p>
           <hr class="bottom-line">
         </div>
-  
-        
-        <form action="contact.php" method="get"  >
+
+
+        <form action="contact.php" method="get">
           <div class="col-md-6 col-sm-6 col-xs-12 left">
             <div class="form-group">
-              <input type="text" name="fullname" class="form-control form "  placeholder="Your Name"  />
-              
+              <input type="text" name="fullname" class="form-control form " placeholder="Your Name" />
+
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email"  placeholder="Your Email"  />
-              
+              <input type="email" class="form-control" name="email" placeholder="Your Email" />
+
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject"  placeholder="Subject"  />
-              
+              <input type="text" class="form-control" name="subject" placeholder="Subject" />
+
             </div>
           </div>
 
           <div class="col-md-6 col-sm-6 col-xs-12 right">
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5"  placeholder="Message"></textarea>
-            
+              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+
             </div>
           </div>
 
           <div class="col-xs-12">
-           
-              <input  type="submit"  class="form contact-form-button light-form-button oswald light" value="Send message">
+
+            <input type="submit" class="form contact-form-button light-form-button oswald light" value="Send message">
           </div>
         </form>
-<!--          MESSAGE FORM-->
-          
-    
-
-
-
-
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-
+        <!--          MESSAGE FORM-->
       </div>
     </div>
   </section>
@@ -741,7 +679,7 @@
         <div class="col-md-2 col-sm-4">
           <p>
             <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Suggest this! <i class="fa fa-arrow-right"></i></button>
+              Suggest this! <i class="fa fa-arrow-right"></i></button>
           </p>
         </div>
       </form>
@@ -753,7 +691,7 @@
         <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
         <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
       </ul>
-      ©2016 Learn To Code  All rights reserved
+      ©2016 Learn To Code All rights reserved
       <div class="credits">
         <!--
           All the links in the footer should remain intact.
@@ -777,23 +715,22 @@
 <!--    php for calculating visits in site-->
 <?php
 
-     
-     if($_SERVER['REQUEST_METHOD']=="GET"){
-       $localhost = "localhost";
-       $usernamew = "root";
-       $passwordw = "";
-          $db = "expdb";
-      $conn = mysqli_connect($localhost,$usernamew,$passwordw,$db);
-      if(!$conn){
-       echo "Connection error";
-       }
-         else{
-     
-     $sql = "UPDATE counter SET visit=visit+1 WHERE id = 0";
-    $result = mysqli_query($conn,$sql);
- }
 
+if ($_SERVER['REQUEST_METHOD'] == "GET") {
+  $localhost = "localhost";
+  $usernamew = "root";
+  $passwordw = "";
+  $db = "expdb";
+  $conn = mysqli_connect($localhost, $usernamew, $passwordw, $db);
+  if (!$conn) {
+    echo "Connection error";
+  } else {
+
+    $sql = "UPDATE counter SET visit=visit+1 WHERE id = 0";
+    $result = mysqli_query($conn, $sql);
+  }
 }
 
 ?>
+
 </html>
